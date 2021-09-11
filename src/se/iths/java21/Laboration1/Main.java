@@ -21,7 +21,7 @@ public class Main {
 
     public static void meny() {
         Scanner scanner = new Scanner(System.in);
-        UppNer choiceOne = new UppNer();
+        UppNer uppNer = new UppNer();
         MinMax minMax = new MinMax();
         RockPaperScissors rockPaperScissors = new RockPaperScissors();
         OrdingOchReda ordingOchReda = new OrdingOchReda();
@@ -38,7 +38,7 @@ public class Main {
 
             switch (selectGame) {
                 case "1" -> {
-                    choiceOne.textInput();
+                    uppNer.textInput();
                     meny();
                 }
                 case "2" -> {
