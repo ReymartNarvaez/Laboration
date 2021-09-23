@@ -37,26 +37,12 @@ public class Main {
             selectGame = scanner.nextLine();
 
             switch (selectGame) {
-                case "1" -> {
-                    uppNer.textInput();
-                    meny();
-                }
-                case "2" -> {
-                    minMax.valueInput();
-                    meny();
-                }
-                case "3" -> {
-                    rockPaperScissors.getGame();
-                    meny();
-                }
-                case "4" -> {
-                    ordingOchReda.valueInput();
-                    meny();
-                }
+                case "1" ->  uppNer.textInput();
+                case "2" -> minMax.valueInput();
+                case "3" -> rockPaperScissors.getGame();
+                case "4" -> ordingOchReda.valueInput();
                 case "e", "E" -> System.exit(0);
-                default -> {
-                    System.out.println("Ogiltigt val");
-                    meny();
+                default -> System.out.println("Ogiltigt val");
                 }
             }
         }
